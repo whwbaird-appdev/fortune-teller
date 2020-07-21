@@ -9,13 +9,20 @@
 
 ## Study static routes
 
-This app currently supports one route: `/lottery/lucky`
+This app currently supports one URL: `/lottery/lucky`
 
-Open up the [Routing Chapter](https://chapters.firstdraft.com/chapters/772) and use it as a map to follow through how that URL works, from `config/routes.rb` through the `app/controllers/` folder, and finally to a template within `app/views/`.
+Follow the R→C→A→V through and study how it works, from `config/routes.rb` through the `app/controllers/` folder, and finally to a template within `app/views/`. Use the [RPS RCAV slides](https://slides.com/raghubetina/06-routing-rcav?token=43w7FD8Q) and [Routing — RCAV chapter](https://chapters.firstdraft.com/chapters/779) as a reference.
 
-Notice that it is using a custom controller class, rather than the out-of-the-box `ApplicationController`. This helps us keep things organized in larger apps; we can create as many as we like, and have them _inherit_ from `ApplicationController`.
+Notice that this action is using a custom controller class, rather than the out-of-the-box `ApplicationController`. This helps us keep things organized in larger apps; we can create as many as we like, and have them _inherit_ from `ApplicationController`.
 
-`unlucky_numbers.html.erb` even demonstrates how to do a `.each` within a `.html.erb` View Template. Ask a question about anything that you don't understand about these two fully-functional RCAVs.
+```ruby
+# app/controllers/numbers_controller.rb
+
+class NumbersController < ApplicationController
+  # ...
+```  
+
+`app/views/lottery_stuff/woohoo.html.erb` demonstrates how to do a `.each` loop within a `.html.erb` embedded Ruby template. Ask a question about _anything_ that you don't understand about this R→C→A→V.
 
 ## Debug static routes
 

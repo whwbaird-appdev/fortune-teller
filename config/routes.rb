@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   # - /lottery/unlucky
 
-  # PART 2: RCAV DEBUGGING
+  # PART 2: R→C→A→V DEBUGGING
   # ======================
 
   # Uncomment each route below ONE AT A TIME and debug.
