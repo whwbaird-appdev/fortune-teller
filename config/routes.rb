@@ -15,29 +15,35 @@ Rails.application.routes.draw do
   # Uncomment each route below ONE AT A TIME and debug.
   # Do NOT uncomment more than one at a time, or you'll be dealing with multiple syntax errors at once.
 
-  # get("/zodiacs/aries", { :controller =>  zodiacs,   action =>  "ram" })
-  # get ("/zodiacs/leo", { :controller => "zodiac", :action => "lion" })
-  # get("/zodiacs/sagittarius", { :controller => "zodiacs", :action => "archer" })
+  # get("/zodiacs/aries", { :controller =>  fire,   action =>  "ram" })
+  # get ("/zodiacs/leo", { :controller => "fire", :action => "lion" })
+  # get("/zodiacs/sagittarius", { :controller => "fire", :action => "archer" })
   
-  # get("/zodiacs/taurus", { :controller, "zodiacs", :action, "bull" })
-  # get(" /zodiacs/virgo", { :controller => "Zodiacs", :action => "maiden" })
-  # get("/zodiacs/capricorn", { :controller => "zodiacs", :action => "goat" })
+  # get("/zodiacs/taurus", { :controller, "earth", :action, "bull" })
+  # get(" /zodiacs/virgo", { :controller => "Earth", :action => "maiden" })
+  # get("/zodiacs/capricorn", { :controller => "earth", :action => "goat" })
   
-  # get(/zodiacs/gemini, { :controller => "zodiacs", :action => "twins" })
-  # get("/zodiacs/libra", { :controller => "zodiacs", :action => "scales" })
-  # get("/zodiacs/aquarius", { :controller => "zodiacs", :action => "waterbearer" })
+  # get(/zodiacs/gemini, { :controller => "air", :action => "twins" })
+  # get("/zodiacs/libra", { :controller => "air", :action => "scales" })
+  # get("/zodiacs/aquarius", { :controller => "air", :action => "waterbearer" })
   
-  # get("/zodiacs/cancer" { :controller => "zodiacs" :action => "crab" })
-  # get("/zodiac/scorpio", { :controller => "zodiacs", :action => "scorpion" })
-  # get("/zodiacs/pisces", { :controller => "zodiacs", :action => "fish" })
+  # get("/zodiacs/cancer" { :controller => "water" :action => "crab" })
+  # get("/zodiac/scorpio", { :controller => "water", :action => "scorpion" })
+  # get("/zodiacs/pisces", { :controller => "water", :action => "fish" })
 
-  # PART 3: MORE RCAV PRACTICE
+  # PART 3: MORE R→C→A→V PRACTICE
   # ==========================
-
-  get("/roll/2/6", { :controller => "dice", :action => "two_six_sided" })
   
   # Let users visit the following URLs.
   # Match the target's interface.
+  # Follow the standard R→C→A→V procedure:
+  #  - Write the ROUTE for each URL:
+  #     - Pick a CONTROLLER to use (a new one if you want, or re-use an existing one).
+  #     - Pick an ACTION name.
+  #     - Define the action and pick a VIEW template.
+  #  - Wire it all up and make it say "hi". Test, READ THE ERROR MESSAGE, and debug if necessary.
+  #  - Add some real HTML that you want to send back.
+  #  - Write the Ruby to make it dynamic work.
 
   # /roll/1/6
   # /roll/2/6
@@ -45,5 +51,16 @@ Rails.application.routes.draw do
   # /roll/4/6
   # /roll/5/6
   # /roll/6/6
+
+  # /roll/1/4
+  # /roll/2/4
+  # /roll/3/4
+  # /roll/4/4
+  # /roll/1/8
+  # /roll/2/8
+  # /roll/1/10
+  # /roll/2/10
+  # /roll/1/20
+  # /roll/2/20
 
 end
