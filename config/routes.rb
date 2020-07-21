@@ -2,8 +2,11 @@ Rails.application.routes.draw do
   # PART 1: EACH IN ERB
   # ===================
 
+  get("/lottery/lucky", { :controller => "numbers", :action => "winners" })
+  get("/", { :controller => "numbers", :action => "winners" })
+
   # Let users visit URLs:
-  # - /lottery/lucky
+
   # - /lottery/unlucky
 
   # PART 2: RCAV DEBUGGING

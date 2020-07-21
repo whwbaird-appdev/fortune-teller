@@ -10,7 +10,7 @@ class AirController < ApplicationController
       @array_of_numbers.push(another_number)
     end
 
-    render({ :template => "wind_templates/gemini.html.erb" })
+    render({ :template => "wind_html/gemini.html.erb" })
   end
 
   def scales
@@ -24,7 +24,7 @@ class AirController < ApplicationController
       array_of_numbers.push(another_number)
     end
 
-    render({ :template => "wind_templates/libra.html.erb" })
+    render({ :template => "wind_html/libra.html.erb" })
   end
 
   def waterbearer
@@ -38,6 +38,6 @@ class AirController < ApplicationController
       @array_of_numbers.push(another_number)
     end
 
-    render({ :template => "flame_templates/aquarius.html.erb" })
+    render({ :template => "flame_html/aquarius.html.erb" })
   end
 end
