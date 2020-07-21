@@ -1,17 +1,13 @@
-class FortunesController < ApplicationController
+class NumbersController < ApplicationController
   def lucky
-    @first_number = rand(100)
-    @second_number = rand(100)
-    @third_number = rand(100)
-    @fourth_number = rand(100)
-    @fifth_number = rand(100)
+    @array_of_numbers = Array.new
 
-    render({ :template => "fortunes_templates/lucky.html.erb"})
-  end
+    5.times do
+      another_number = rand(1...100)
+      
+      @array_of_numbers.push(another_number)
+    end
 
-  def unlucky
-    @numbers = [rand(100...1000), rand(100...1000), rand(100...1000), rand(100...1000), rand(100...1000)]
-
-    render({ :template => "fortunes_templates/unlucky.html.erb"})
+    render({ :template => "lottery_templates/lucky.html.erb"})
   end
 end

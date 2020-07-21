@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  get("/", { :controller => "numbers", :action => "lucky"})
+  get("/", { :controller => "numbers", :action => "lucky" })
 
-  get("/lottery/lucky", { :controller => "numbers", :action => "lucky"})
+  get("/lottery/lucky", { :controller => "numbers", :action => "lucky" })
   
   # PART 1: EACH IN ERB
   # ===================
@@ -35,7 +35,7 @@ Rails.application.routes.draw do
   # ==========================
   
   # Let users visit the following URLs.
-  # Match the target's interface.
+  # See the target to find out what the interface should be — then match it.
   # Follow the standard R→C→A→V procedure:
   #  - Write the ROUTE for each URL:
   #     - Pick a CONTROLLER to use (a new one if you want, or re-use an existing one).
