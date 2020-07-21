@@ -60,7 +60,7 @@ Debugging checklist:
 
 ## Part 3: More R→C→A→V Practice
 
-In the nav, there are links to 18 pages that simulate rolling dice in various combinations that are useful for board games (six-sided dice, from die up to six dice) and other, more exotic dice combinations that are useful for e.g. [Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons#Game_mechanics).
+In the nav, there are links to 18 pages that simulate rolling dice in various combinations that are useful for board games (six-sided dice, from one die up to six dice) and other, more exotic dice combinations that are useful for e.g. [Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons#Game_mechanics).
 
 Right now, none of those URLs work; and the routes don't even exist. Implement them, one at a time. Try to type them out rather than copy-pasting; the point is to build muscle memory and encounter error messages in a controlled setting.
 
