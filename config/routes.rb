@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   # Uncomment each route below ONE AT A TIME and debug.
   # Do NOT uncomment more than one at a time, or you'll be dealing with multiple syntax errors at once.
 
-  # get("/zodiacs/aries", { :controller =>  fire,   action =>  "ram" })
+  # get("/zodiacs/aries", { :controller =>  fire, action =>  "ram" })
   # get ("/zodiacs/leo", { :controller => "fire", :action => "lion" })
   # get("/zodiacs/sagittarius", { :controller => "fire", :action => "archer" })
   
@@ -42,8 +42,8 @@ Rails.application.routes.draw do
   #     - Pick an ACTION name.
   #     - Define the action and pick a VIEW template.
   #  - Wire it all up and make it say "hi". Test, READ THE ERROR MESSAGE, and debug if necessary.
-  #  - Add some real HTML that you want to send back.
-  #  - Write the Ruby to make it dynamic work.
+  #  - Add some static HTML to mock up the response that you want to send back.
+  #  - Write the Ruby to make it dynamic, and work properly.
 
   # /roll/1/6
   # /roll/2/6
