@@ -8,6 +8,6 @@ class NumbersController < ApplicationController
       @zebra.push(giraffe)
     end
 
-    render("lottery_stuff/woohoo.html.erb")
+    render({ :template => "lottery_stuff/woohoo.html.erb"})
   end 
 end
