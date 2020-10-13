@@ -1,4 +1,4 @@
-image: jelaniwoods/appdev2020-omnicalc-1
+image: jelaniwoods/appdev2020-fortune-teller
 
 tasks:
   - init: bin/setup
