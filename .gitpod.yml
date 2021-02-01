@@ -1,4 +1,4 @@
-image: jelaniwoods/appdev2020-fortune-teller
+image: jelaniwoods/appdev2021-fortune-teller
 
 tasks:
   - init: bin/setup
